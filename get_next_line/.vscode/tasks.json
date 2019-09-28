@@ -1,0 +1,68 @@
+{
+    "tasks": [
+		{
+			"type": "shell",
+			"label": "gcc build active file",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-g",
+				"-Wall",
+				"-Wextra",
+				"-Werror",
+                "${workspaceFolder}/main.c",
+                "${workspaceFolder}/libft/ft_bzero.c",
+                "${workspaceFolder}/libft/ft_strchr.c",
+                "${workspaceFolder}/libft/ft_strjoin.c",
+                "${workspaceFolder}/libft/ft_strlen.c",
+                "${workspaceFolder}/libft/ft_strnew.c",
+				"${workspaceFolder}/libft/ft_strcat.c",
+				"${workspaceFolder}/libft/ft_memmove.c",
+				"${workspaceFolder}/libft/ft_strncpy.c",
+				"${workspaceFolder}/libft/ft_strdup.c",
+				"${workspaceFolder}/libft/ft_strsub.c",
+				"${workspaceFolder}/libft/ft_strdel.c",
+				"${workspaceFolder}/libft/ft_strichr.c",
+                "${workspaceFolder}/get_next_line.c",
+				"-o",
+				"${workspaceFolder}/a.out"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "gcc build active folder",
+			"command": "${workspaceFolder}/.vscode/compile.sh",
+			"args": [
+				"${workspaceFolder}/${relativeFileDirname}"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "gcc build project",
+			"command": "${workspaceFolder}/.vscode/compile.sh",
+			"args": [
+				"${workspaceFolder}"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}
