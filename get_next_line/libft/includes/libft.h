@@ -85,7 +85,6 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list*elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_create_elem(void *content, size_t content_size);
 void				ft_lstfree(t_list **alst);
-//t_data  			*ft_list_swipe(t_data *list, int fd);
 int					ft_strichr(const char *str, int ch);
 
 #endif

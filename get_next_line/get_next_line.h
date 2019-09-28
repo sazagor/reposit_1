@@ -19,8 +19,8 @@
 # include	<sys/types.h>
 # include	<sys/stat.h>
 # include	<fcntl.h>
-# include   "./libft/includes/libft.h"
-# define	BUFF_SIZE 1
+# include   "libft.h"
+# define	BUFF_SIZE 1000
 # define    CHECK(a) if (!a) return (-1);
 
 
